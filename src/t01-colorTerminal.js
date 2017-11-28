@@ -1,6 +1,17 @@
 const chalk = require('chalk');
 const log = console.log;
 
+
+while(true) {
+    let randomNumberBetween0and10 = Math.floor(Math.random() * 11);
+
+if(randomNumberBetween0and10<5) {
+    chalk.green('Price is good.')
+} else {
+    chalk.green('Price is bad.')
+}
+}
+
 // Combine styled and normal strings
 log(chalk.blue('Hello') + 'World' + chalk.red('!'));
 
